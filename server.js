@@ -79,7 +79,7 @@ app.delete('/products/:id', async(req,res) =>{
 })
 
 // connecting data base which is mongoose
-mongoose.connect('mongodb+srv://<putyourusername>:<putyourpasswordhere>@simpleapi.kfzzevp.mongodb.net/Node-Api?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://admin:admin123456@simpleapi.kfzzevp.mongodb.net/Node-Api?retryWrites=true&w=majority')
 .then(() =>{
     app.listen(3000,()=> {
         console.log(`Server is UP !!! `);
